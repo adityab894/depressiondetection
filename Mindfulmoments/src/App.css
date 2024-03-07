@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,600&family=Teko:wght@300;400;500&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+.splashcircle {
+  background: white;
+  animation: colorChange 1s 4s forwards;
+}
+
+@keyframes colorChange {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(7);
+  }
+}
+
+.splashanimation {
+  animation: colorChang 4s forwards ease-in-out;
+}
+
+@keyframes colorChang {
+  0% {
+  }
+  100% {
+    display: none;
+  }
+}
+
+.hero-text {
+  font-family: "Teko", sans-serif;
+  background-clip: text;
+  background-image: linear-gradient(
+    to right,
+    #00aaff,
+    #6300f8,
+    rgb(167, 16, 255)
+  );
+  color: transparent;
+}
+
+.an1 {
+  animation: moveUp 7s infinite forwards ease-in-out;
+}
+
+.an2 {
+  animation: moveUp 8s infinite forwards ease-in-out;
+}
+
+@keyframes moveUp {
+  0% {
+    top: 20%;
+  }
+  50% {
+    top: 45%;
+    left: 60%;
+  }
+  100% {
+    top: 20%;
+  }
+}
